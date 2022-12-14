@@ -14,14 +14,51 @@ let undefinedVar = undefined;
 let nullVar = null;
 // there is also bigint and symbol but I rarely see these
 
-// Arrays and Objects
+
+
+//CONDITIONALS
+console.log("=====CONDITIONALS=====")
+// conditional operators 
+// NOTE: I read my conditional statements out loud to myself to see if they make sense
+// < less than
+// > greater than
+// <= less than or equal to
+// >= greater than or equal to
+// != not equal example --- 5 != 10 "five is not equal to 10" this would be false
+// == double equal allows comparisons across values that are not of the same primitive type from above 
+            // example "5" == 5 is true!
+            // normally it's safer to just use === to make sure you're always comparing "apples to apples"
+// === the more strict version of equal comparisons 
+
+
+
+let favoriteColor = "Grey"
+
+if (favoriteColor === "Grey"){
+    console.log("The conditional evaluated to true");
+} else { // notice how I don't have any () for the else! else is meant to catch any other conditions that occurred not addressed by previous conditionals
+    console.log("Value stored in favoriteColor is not 'Grey'");
+}
+
+let favoriteNumber = 23;
+if (favoriteNumber > 15){
+    console.log("Value in favorite number is greater than 15");
+} if (favoriteNumber > 20){
+    console.log("Value in favorite number is greater than 20");
+} else if (favoriteNumber > 10){ 
+    console.log("WHY DOESN'T THIS LOG"); // because else if's only evaluate if none of the prior conditions evaluated to true
+} else {
+    console.log("For anything else! No other condition specified occurred!")
+}
+
+// ARRAYS
+console.log("=====ARRAYS=====")
 
 //indexes           //0        //1      //2     //3     //4         //5        //6      //7
 let planetsArr = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
 
 // you can mix data-types in an array but this is often considered poor practice
 let badArray = ["Hello", 10, true];
-
 
 // finding values of index from array
 // how many elements (items) are in planetsArr
@@ -36,14 +73,19 @@ console.log("Last Planet Equivalent: ", planetsArr[7]); // same as above but
 console.log("This should be earth: ", planetsArr[2]);
 
 // Console logging all the planets in planetsArr
+console.log("=====LOOPING=====")
 for (let i = 0; i < planetsArr.length; i++) {
-    const element = planetsArr[i]; // the variable element gets created by default when 
-    console.log("This is planet at index:", i, element); // you can log multiple variables in a single console.log
+    const planet = planetsArr[i]; // the variable planet gets created by default when 
+    console.log("This is planet at index:", i, planet); // you can log multiple variables in a single console.log
     
+    if (planet === "Earth"){
+        console.log("I found "+ planet + " at index " + i + "!")
+    }
 }
 
 // Objects are really important! We can do all sorts of useful things with them. Here's a bit of preview of how objects are created and how to get values out of them
 
+console.log("=====OBJECTS=====")
 // Objects are made up of key value pairs 
 // key's (sometimes called properties) are in front of the : and values are after
 // keys are separated by a ,
