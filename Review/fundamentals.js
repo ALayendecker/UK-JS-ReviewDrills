@@ -94,6 +94,13 @@ console.log("inner array at [0] and last index of that array: ",twoDArray[0][2])
 console.log("String2 from the the second inner array: ", twoDArray[1][1]) // notice how the indexing still follows the "starts at 0" rule
 console.log("Logging the number 10 from the 3rd inner array", twoDArray[2][0])
 
+// here is an example that console.logs in a for loop the `1th` index from each inner array
+
+for (let i = 0; i < twoDArray.length; i++) {
+    console.log(twoDArray[i][1])
+    
+}
+
 
 
 // Objects are really important! We can do all sorts of useful things with them. Here's a bit of preview of how objects are created and how to get values out of them
