@@ -83,6 +83,19 @@ for (let i = 0; i < planetsArr.length; i++) {
     }
 }
 
+console.log("=====2d Arrays=====")
+
+// I know I talked about mixing datatypes in arrays being bad but here's how we would grab values from them anyway
+let twoDArray = [["hello", 2, true], 
+                 ["String1", "String2", "String3"], 
+                 [10, 20, 30]]
+// this array ends up being a 2d array with 3 columns and 3 rows
+console.log("inner array at [0] and last index of that array: ",twoDArray[0][2])// console logging the boolean on the first inner array in the last index
+console.log("String2 from the the second inner array: ", twoDArray[1][1]) // notice how the indexing still follows the "starts at 0" rule
+console.log("Logging the number 10 from the 3rd inner array", twoDArray[2][0])
+
+
+
 // Objects are really important! We can do all sorts of useful things with them. Here's a bit of preview of how objects are created and how to get values out of them
 
 console.log("=====OBJECTS=====")
